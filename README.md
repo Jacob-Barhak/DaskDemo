@@ -36,19 +36,19 @@ python DaskDemo.py <Client> <Repetitions>
 
 1. Define a local scheduler:
 
-dask-scheduler --host 127.0.0.1
+    dask-scheduler --host 127.0.0.1
 
 2. Define workers 
 
-dask-worker 127.0.0.1:8786 --nprocs=4
+    dask-worker 127.0.0.1:8786 --nprocs=4
 
 3. Launch a browser and open the dask status viewer address
 
-http://127.0.0.1:8787/status
+    http://127.0.0.1:8787/status
 
 4. Launch the program
 
-python DaskDemo.py  127.0.0.1:8786 1000
+    python DaskDemo.py  127.0.0.1:8786 1000
 
 
 FILES:
