@@ -29,24 +29,32 @@ EXAMPLES:
 ---------
 
 ### Basic use:
-python DaskDemo.py 
+python DaskDemo.py <Client> <Repetitions>
 * If the user specifies no arguments, the program will run locally
 
 ### Advanced use:
 
 1. Define a local scheduler:
+
 dask-scheduler --host 127.0.0.1
+
 2. Define workers 
+
 dask-worker 127.0.0.1:8786 --nprocs=4
+
 3. Launch a browser and open the dask status viewer address
+
 http://127.0.0.1:8787/status
+
 4. Launch the program
+
 python DaskDemo.py  127.0.0.1:8786 1000
 
 
 FILES:
 ------
 * DaskDemo.py : Demo python file
+* LICENSE : The license file
 * Readme.md : The file that you are reading now
 
 
